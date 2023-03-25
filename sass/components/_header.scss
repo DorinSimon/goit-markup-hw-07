@@ -54,9 +54,8 @@
     margin-right: 10px;
   }
   &__link {
-    color: var(--text-color-gray);
+    color: $colorBlack;
     &:hover,
-    &:focus,
     &__item:hover {
       color: $colorBlue;
       fill: $colorBlue;
@@ -64,7 +63,7 @@
   }
 }
 
-.navigation-list__item,
+.navigation-list__item__style,
 .contacts__link {
   font-weight: $fontWeightLink;
   font-size: 14px;
