@@ -6,7 +6,8 @@
   <title>Web Studio Homework Project</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+ <!-- <link rel="stylesheet" href="css/style.css" />-->
+ <link rel="stylesheet" href="css/main.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -22,7 +23,7 @@
           </svg></button>
       </div>
       <h3 class="modal__title">Leave your information and we'll call you back</h3>
-      <form name="contact-form" class="form-contact">
+      <form name="contact-form" class="form">
         <label class="form__item">
           Name
           <input class="form__input" type="text" name="name" />
@@ -50,14 +51,14 @@
           <textarea class="form__textarea" name="comments" placeholder="Enter the text"></textarea>
         </label>
         <label class="checkbox-label">
-          <input type="checkbox">
-          <span class="replace__checkbox">
+          <input class="checkbox-label__input" type="checkbox">
+          <span class="checkbox-label__replace">
             <svg width="16" height="15">
               <use href="./images/icons.svg#icon-Vector-5"></use>
             </svg>
           </span>
           I agree with the letter and accept the
-          <a href="#">Terms and condition</a>
+          <a class="checkbox-label__link" href="#">Terms and condition</a>
         </label>
         <button class="submit-button" type="submit">Send
         </button>
@@ -67,21 +68,21 @@
   <!--header-->
   <header>
     <div class="header-container">
-      <nav class="nav-list">
+      <nav class="nav">
         <a class="nav__web unstyled-link" href="https://www.edu.goit.global/ro/dashboard" target="_blank"
           rel="noreferrer noopener"><span class="color-web">Web</span><span class="color-studio-header">Studio</span>
         </a>
         <ul class="navigation-list list">
-          <li class="nav__list-item "><a class="curent-page link-style unstyled-link" href="index.html">Studio</a></li>
-          <li class="nav__list-item"><a class="link-style unstyled-link" href="portofolio.html">Portofolio</a></li>
-          <li class="nav__list-item"><a class="link-style unstyled-link" href="#">Contacts</a></li>
+          <li class="navigation-list__item "><a class="curent-page link-style unstyled-link" href="index.html">Studio</a></li>
+          <li class="navigation-list__item"><a class="link-style unstyled-link" href="portofolio.html">Portofolio</a></li>
+          <li class="navigation-list__item"><a class="link-style unstyled-link" href="#">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="contacts-list list ">
-        <li> <a class="contacts__link unstyled-link " href="mailto:info@devstudio.com"><svg width="16" height="12">
+      <ul class="contacts list ">
+        <li class="contacts__item"> <a class="contacts__link unstyled-link " href="mailto:info@devstudio.com"><svg class="contacts__svg" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope-hover"></use>
             </svg>info@devstudio.com</a></li>
-        <li><a class="contacts__link  unstyled-link" href="tel:+1212-772-4150"><svg width="10" height="16">
+        <li class="contacts__item"><a class="contacts__link  unstyled-link" href="tel:+1212-772-4150"><svg class="contacts__svg" width="10" height="16">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>+1 212-772-4150</a></li>
       </ul>
@@ -91,12 +92,12 @@
 
     <!--title-->
     <section class="title-section">
-      <h1 class="title__block">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+      <h1 class="title-section__block">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
       <button data-modal-open class="button-request" type="button"><span>Request our service</span></button>
     </section>
     <!--skills section-->
-    <section class="skills">
-      <ul class="skills-list list">
+    <section class="skills-section">
+      <ul class="skills list">
         <li>
           <div class="skills__icons"><svg width="65.32" height="70">
               <use href="./images/icons.svg#icon-antenna-1"> </use>
@@ -171,13 +172,13 @@
       </ul>
     </section>
     <!--Our team-->
-    <section class="team">
+    <section class="our-team">
       <h2 class="subtitle-section">Our Team</h2>
-      <ul class="team-list list">
-        <li class="team-card">
+      <ul class="team list">
+        <li class="team__card">
           <img src="images/product.jpg" alt="Product Designer" width="270" height="260" />
-          <h3 class="team__person">Christopher Walker</h3>
-          <p class="team__function">Product Designer</p>
+          <h3 class="team__card__person">Christopher Walker</h3>
+          <p class="team__card__function">Product Designer</p>
           <div class="social-media">
             <ul class="social-media__list list">
               <li class="social-media__icon">
@@ -211,10 +212,10 @@
             </ul>
           </div>
         </li>
-        <li class="team-card">
+        <li class="team__card">
           <img src="images/frontend.jpg" alt="Frontend Developer" width="270" height="260" />
-          <h3 class="team__person">Kylie Evans</h3>
-          <p class="team__function">Frontend Developer</p>
+          <h3 class="team__card__person">Kylie Evans</h3>
+          <p class="team__card__function">Frontend Developer</p>
           <div class="social-media">
             <ul class="social-media__list list">
               <li class="social-media__icon">
@@ -248,10 +249,10 @@
             </ul>
           </div>
         </li>
-        <li class="team-card">
+        <li class="team__card">
           <img src="images/marketing.jpg" alt="Marketing" width="270" height="260" />
-          <h3 class="team__person">Ryan Harris</h3>
-          <p class="team__function">Marketing</p>
+          <h3 class="team__card__person">Ryan Harris</h3>
+          <p class="team__card__function">Marketing</p>
           <div class="social-media">
             <ul class="social-media__list list">
               <li class="social-media__icon">
@@ -285,10 +286,10 @@
             </ul>
           </div>
         </li>
-        <li class="team-card">
+        <li class="team__card">
           <img src="images/uidesigner.jpg" alt="UI Designer" width="270" height="260" />
-          <h3 class="team__person">Tyler Moore</h3>
-          <p class="team__function">UI Designer</p>
+          <h3 class="team__card__person">Tyler Moore</h3>
+          <p class="team__card__function">UI Designer</p>
           <div class="social-media">
             <ul class="social-media__list list">
               <li class="social-media__icon">
@@ -325,36 +326,36 @@
       </ul>
     </section>
     <!--customers-->
-    <section class="customers">
+    <section class="customers-section">
       <h2 class="subtitle-section">Regular Customers</h2>
-      <ul class="customers-icons list">
+      <ul class="customers list">
         <li class="customers__list"><a href="#">
-            <svg class="customers-icon__color" width="106" height="60">
+            <svg class="customers__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-Union"></use>
             </svg>
           </a></li>
         <li class="customers__list"><a href="#">
-            <svg class="customers-icon__color" width="106" height="60">
+            <svg class="customers__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-Union-1"></use>
             </svg>
           </a></li>
         <li class="customers__list"><a href="#">
-            <svg class="customers-icon__color" width="106" height="60">
+            <svg class="customers__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-Object"></use>
             </svg>
           </a></li>
         <li class="customers__list"><a href="#">
-            <svg class="customers-icon__color" width="106" height="60">
+            <svg class="customers__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-group"></use>
             </svg>
           </a></li>
         <li class="customers__list"><a href="#">
-            <svg class="customers-icon__color" width="106" height="60">
+            <svg class="customers__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-group-1"></use>
             </svg>
           </a></li>
         <li class="customers__list"><a href="#">
-            <svg class="customers-icon__color" width="106" height="60">
+            <svg class="customers__icon" width="106" height="60">
               <use href="./images/icons.svg#icon-Object-1"></use>
             </svg>
           </a></li>
@@ -377,13 +378,13 @@
               </a>
             </li>
             <li>
-              <a class="contact__link unstyled-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="adress__contact-link unstyled-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="contact__link unstyled-link" href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+            <li><a class="adress__contact-link unstyled-link" href="tel:+1212-772-4150">+1 212-772-4150</a></li>
           </ul>
         </address>
       </div>
-      <div class="find-container">
+      <div class="find">
         <h3 class="find__title">FIND US ON</h3>
         <ul class=" social-media-footer list">
           <li class="social-media__icon social-media--icon-footer">
@@ -418,9 +419,9 @@
       </div>
       <div class="form-container">
         <form name="subscribe-form" class="footer-form">
-          <label class="footer__email">
+          <label class="form-container__email">
             Subscribe to the newsletter
-            <input class="footer__input" type="text" name="E-mail" placeholder="E-mail">
+            <input class="form-container__email__input" type="text" name="E-mail" placeholder="E-mail">
           </label>
         </form>
         <button class="subscribe-button" type="submit">Subscribe <svg width="24" height="24">

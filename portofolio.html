@@ -6,7 +6,8 @@
   <title>Web Studio Homework Project</title>
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+ <!-- <link rel="stylesheet" href="css/style.css" />-->
+ <link rel="stylesheet" href="css/main.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -17,21 +18,21 @@
   <!--header section-->
   <header >
     <div class="header-container ">
-      <nav class="nav-list">
+      <nav class="nav">
         <a class="nav__web unstyled-link" href="https://www.edu.goit.global/ro/dashboard" target="_blank"
           rel="noreferrer noopener"><span class="color-web">Web</span><span class="color-studio-header">Studio</span>
         </a>
         <ul class="navigation-list list">
-          <li class="nav__list-item "><a class="link-style unstyled-link" href="index.html">Studio</a></li>
-          <li class="nav__list-item"><a class="link-style unstyled-link curent-page" href="portofolio.html">Portofolio</a></li>
-          <li class="nav__list-item"><a class="link-style unstyled-link" href="#">Contacts</a></li>
+          <li class="navigation-list__item "><a class="link-style unstyled-link" href="index.html">Studio</a></li>
+          <li class="navigation-list__item"><a class="link-style unstyled-link curent-page" href="portofolio.html">Portofolio</a></li>
+          <li class="navigation-list__item"><a class="link-style unstyled-link" href="#">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="contacts-list list ">
-        <li> <a class="contacts__link unstyled-link " href="mailto:info@devstudio.com"><svg width="16" height="12">
+      <ul class="contacts list ">
+        <li class="contacts__item"> <a class="contacts__link unstyled-link " href="mailto:info@devstudio.com"><svg class="contacts__svg" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope-hover"></use>
             </svg>info@devstudio.com</a></li>
-        <li><a class="contacts__link  unstyled-link" href="tel:+1212-772-4150"><svg width="10" height="16">
+        <li class="contacts__item"><a class="contacts__link  unstyled-link" href="tel:+1212-772-4150"><svg class="contacts__svg" width="10" height="16">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>+1 212-772-4150</a></li>
       </ul>
@@ -40,78 +41,78 @@
   <!--main section-->
   <main>
     <section class="cards"> 
-      <ul class="button-list list">
-        <li><button class="button__style" type="button"><span class="button__text">All</span></button>
+      <ul class="button list">
+        <li><button class="button__style" type="button"><span class="button__style__text">All</span></button>
         </li>
-        <li><button class="button__style" type="button"><span class="button__text">Web-sites</span></button></li>
-        <li><button class="button__style" type="button"><span class="button__text">Apps</span></button>
+        <li><button class="button__style" type="button"><span class="button__style__text">Web-sites</span></button></li>
+        <li><button class="button__style" type="button"><span class="button__style__text">Apps</span></button>
         </li>
-        <li><button class="button__style" type="button"><span class="button__text">Design</span></button></li>
-        <li><button class="button__style" type="button"><span class="button__text">Marketing</span></button></li>
+        <li><button class="button__style" type="button"><span class="button__style__text">Design</span></button></li>
+        <li><button class="button__style" type="button"><span class="button__style__text">Marketing</span></button></li>
       </ul>
       <ul class="cards-list list">
         <li class="card-box">
-          <div class="card__img">
+          <div class="card-box__img">
             <div class="overlay"><p>text</p></div>
           <img src="images/img(1).jpg" alt="Web site image"  /></div>          
-          <h3 class="card__title">Technoduck</h3>
-          <p class="card__search">Web-site</p>
+          <h3 class="card-box__title">Technoduck</h3>
+          <p class="card-box__search">Web-site</p>
         </li>
         <li class="card-box">
-          <div class="card__img"><div class="overlay"><p>text</p></div>
+          <div class="card-box__img"><div class="overlay"><p>text</p></div>
           <img src="images/img(2).jpg" alt="Design image"  /></div>
           
-          <h3 class="card__title">Poster New Orlean vs Golden Star</h3>
-          <p class="card__search">Design</p>
+          <h3 class="card-box__title">Poster New Orlean vs Golden Star</h3>
+          <p class="card-box__search">Design</p>
         </li>
         <li class="card-box">
-          <div class="card__img"><div class="overlay"><p>text</p></div>
+          <div class="card-box__img"><div class="overlay"><p>text</p></div>
           <img src="images/img(3).jpg" alt="App image" /></div>
           
-          <h3 class="card__title">Seafood Restaurant</h3>
-          <p class="card__search">Apps</p>
+          <h3 class="card-box__title">Seafood Restaurant</h3>
+          <p class="card-box__search">Apps</p>
         </li>
         <li class="card-box">
-          <div class="card__img"><div class="overlay"><p>text</p></div>
+          <div class="card-box__img"><div class="overlay"><p>text</p></div>
           <img src="images/img(4).jpg" alt="Marketing image" /></div>
           
-          <h3 class="card__title">Project Prime</h3>
-          <p class="card__search">Marketing</p>
+          <h3 class="card-box__title">Project Prime</h3>
+          <p class="card-box__search">Marketing</p>
         </li>
         <li class="card-box">
-          <div class="card__img"><div class="overlay"><p>text</p></div>
+          <div class="card-box__img"><div class="overlay"><p>text</p></div>
           <img src="images/img(5).jpg" alt="App image" /></div>
           
-          <h3 class="card__title">Project Boxes</h3>
-          <p class="card__search">Apps</p>
+          <h3 class="card-box__title">Project Boxes</h3>
+          <p class="card-box__search">Apps</p>
         </li>
         <li class="card-box">
-          <div class="card__img"><div class="overlay"><p>text</p></div>
+          <div class="card-box__img"><div class="overlay"><p>text</p></div>
           <img src="images/img(6).jpg" alt="Web site image"  /></div>
           
-          <h3 class="card__title">Inspiration has no Borders</h3>
-          <p class="card__search">Web-site</p>
+          <h3 class="card-box__title">Inspiration has no Borders</h3>
+          <p class="card-box__search">Web-site</p>
         </li>
         <li class="card-box">
-          <div class="card__img"><div class="overlay"><p>text</p></div>
+          <div class="card-box__img"><div class="overlay"><p>text</p></div>
           <img src="images/img(7).jpg" alt="Design image" /></div>
           
-          <h3 class="card__title">Limited Edition</h3>
-          <p class="card__search">Design</p>
+          <h3 class="card-box__title">Limited Edition</h3>
+          <p class="card-box__search">Design</p>
         </li>
         <li class="card-box">
-          <div class="card__img"><div class="overlay"><p>text</p></div>
+          <div class="card-box__img"><div class="overlay"><p>text</p></div>
           <img src="images/img(8).jpg" alt="Marketing image" /></div>
           
-          <h3 class="card__title">Project LAB</h3>
-          <p class="card__search">Marketing</p>
+          <h3 class="card-box__title">Project LAB</h3>
+          <p class="card-box__search">Marketing</p>
         </li>
         <li class="card-box">
-          <div class="card__img"><div class="overlay"><p>text</p></div>
+          <div class="card-box__img"><div class="overlay"><p>text</p></div>
           <img src="images/img(9).jpg" alt="App image" /></div>
           
-          <h3 class="card__title">Growing Business</h3>
-          <p class="card__search">Apps</p>
+          <h3 class="card-box__title">Growing Business</h3>
+          <p class="card-box__search">Apps</p>
         </li>
       </ul>
     </section>
@@ -133,13 +134,13 @@
               </a>
             </li>
             <li>
-              <a class="contact__link unstyled-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="adress__contact-link unstyled-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="contact__link unstyled-link" href="tel:+1212-772-4150">+1 212-772-4150</a></li>
+            <li><a class="adress__contact-link unstyled-link" href="tel:+1212-772-4150">+1 212-772-4150</a></li>
           </ul>
         </address>
       </div>
-      <div class="find-container">
+      <div class="find">
         <h3 class="find__title">FIND US ON</h3>
         <ul class=" social-media-footer list">
           <li class="social-media__icon social-media--icon-footer">
@@ -174,9 +175,9 @@
       </div>
       <div class="form-container">
         <form name="subscribe-form" class="footer-form">
-          <label class="footer__email">
+          <label class="form-container__email">
             Subscribe to the newsletter
-            <input class="footer__input" type="text" name="E-mail" placeholder="E-mail">
+            <input class="form-container__email__input" type="text" name="E-mail" placeholder="E-mail">
           </label>
         </form>
         <button class="subscribe-button" type="submit">Subscribe <svg width="24" height="24">
